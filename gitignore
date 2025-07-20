@@ -1,0 +1,48 @@
+
+# Python/Flask (server/)
+/server/venv/
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+.Python
+/server/.env
+/server/uploads/
+*.log
+
+# React/Vite (client/)
+/client/node_modules/
+/client/dist/
+/client/.env
+/client/.env.local
+/client/.env.development
+/client/.env.production
+
+# OS and Editor Junk
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Build Artifacts
+*.egg-info/
+dist/
+build/
+
+# Testing and Misc
+/server/videos.json     # Optional: exclude if dynamically generated
+*.cache
+*.swp
+*.bak
+*.tmp
+
+# Keep assets and key files
+!/client/public/assets/
+!/client/public/placeholder.png
+!/server/requirements.txt
+!/server/server.py
+!/client/src/
+!/client/package.json
+!/client/vite.config.js

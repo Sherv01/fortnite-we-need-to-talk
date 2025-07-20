@@ -1,0 +1,39 @@
+/* Load Luckiest Guy font */
+@font-face {
+  font-family: 'Luckiest Guy';
+  src: url('/LuckiestGuy-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Apply gradient to root element */
+body {
+  margin: 0;
+  background: linear-gradient(to bottom, #178FDB, #6AE2FD);
+  min-height: 100vh;
+}
+
+/* Ensure Tailwind base styles are included */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles for parallelogram buttons */
+.parallelogram {
+  transform: skew(-20deg);
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  border: 2px solid #F3CF1A;
+  background-color: white;
+  transition: all 0.2s;
+}
+
+.parallelogram:hover {
+  background-color: #F3CF1A;
+  transform: skew(-20deg) scale(1.1);
+}
+
+.parallelogram > * {
+  transform: skew(20deg);
+  display: inline-block;
+}
